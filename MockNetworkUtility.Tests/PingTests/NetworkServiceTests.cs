@@ -7,6 +7,7 @@ using Xunit;
 using MockNetworkUtility.Ping;
 using FluentAssertions;
 using FluentAssertions.Extensions;
+using System.Net.NetworkInformation;
 
 namespace MockNetworkUtility.Test.PingTests
 {
@@ -67,6 +68,28 @@ namespace MockNetworkUtility.Test.PingTests
 			//https:\//fluentassertions.com/datetimespans/ -website
 			result.Should().BeAfter(1.January(2010));
 			result.Should().BeBefore(1.January(2050));
+		}
+		[Fact]
+		public void NetworkService_GetPingOptions_ReturnObject()
+		{
+			//Arrange 
+			var expected = new PingOptions()
+			{
+				DontFragment = true,
+				Ttl = 1
+			};
+			//ACT
+			var result = _pingService.GetPingOptions();
+
+			//Assert WARNING: Be Careful!
+			//comparing strict equality
+			//CHECK FOR THE TYPE
+			result.Should().BeOfType<PingOptions>();
+			//you ned to use strict equality
+			result.Should().BeEquivalentTo(expected);
+			//comparing value of an object member
+			result.Ttl.Should().Be(1);
+
 		}
 	}
 }
