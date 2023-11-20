@@ -1,0 +1,14 @@
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\bin\Debug\net6.0\MockNetworkUtility.exe
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\bin\Debug\net6.0\MockNetworkUtility.deps.json
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\bin\Debug\net6.0\MockNetworkUtility.runtimeconfig.json
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\bin\Debug\net6.0\MockNetworkUtility.dll
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\bin\Debug\net6.0\MockNetworkUtility.pdb
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.AssemblyInfoInputs.cache
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.AssemblyInfo.cs
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.csproj.CoreCompileInputs.cache
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.dll
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\refint\MockNetworkUtility.dll
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.pdb
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\MockNetworkUtility.genruntimeconfig.cache
+C:\Users\loren\OneDrive\Desktop\Unit Tests\UnitTest\MockNetworkUtility\obj\Debug\net6.0\ref\MockNetworkUtility.dll
