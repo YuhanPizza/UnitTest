@@ -89,7 +89,32 @@ namespace MockNetworkUtility.Test.PingTests
 			result.Should().BeEquivalentTo(expected);
 			//comparing value of an object member
 			result.Ttl.Should().Be(1);
+			result.DontFragment.Should().BeTrue();
 
 		}
+		[Fact]
+		public void NetworkService_MostRecentPings_ReturnObject()
+		{
+			//Arrange 
+			var expected = new PingOptions()
+			{
+				DontFragment = true,
+				Ttl = 1
+			};
+			//ACT
+			var result = _pingService.MostRecentPings();
+
+			//Assert WARNING: Be Careful!
+			//comparing strict equality
+			//CHECK FOR THE TYPE
+			result.Should().BeOfType<PingOptions[]>(); //we returning an array ([]) of PingOptions
+			//for collections contains an equivalent object
+			result.Should().ContainEquivalentOf(expected);
+			//comparing value of an object member
+			result.Should().Contain(x => x.DontFragment == true);
+			result.Should().Contain(i => i.Ttl == 1);
+
+		}
+
 	}
 }
