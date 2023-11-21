@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MockNetworkUtility.DNS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -9,10 +10,27 @@ namespace MockNetworkUtility.Ping
 {
 	public class NetworkService
 	{
-		//search DNS(); 
+		private readonly IDNS _dNS;
+
+		//DNS();
+		public NetworkService(IDNS dNS) {
+			_dNS = dNS;
+		}
 		//BuildPacket();
 		//return mockping;
-		public string SendPing() => "Success: Ping Sent!";
+		public string SendPing() {
+
+			//Dependencies
+			var dnsSuccess = _dNS.SendDNS();
+			if (dnsSuccess)
+			{
+				return "Success: Ping Sent!";
+			}
+			else
+			{
+				return "Failed: Ping Not Sent!";
+			}
+		}
 		public int PingTimeOut(int a, int b) => a + b;
 		public DateTime LastPingDate() => DateTime.Now;
 		//from ping library

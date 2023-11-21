@@ -8,23 +8,31 @@ using MockNetworkUtility.Ping;
 using FluentAssertions;
 using FluentAssertions.Extensions;
 using System.Net.NetworkInformation;
+using MockNetworkUtility.DNS;
+using FakeItEasy;
 
+//Tests
 namespace MockNetworkUtility.Test.PingTests
 {
 	public class NetworkServiceTests
 	{
 		private readonly NetworkService _pingService;
+		private readonly IDNS _dNS;
 		public NetworkServiceTests()
 		{
+			//Dependencies
+			_dNS = A.Fake<IDNS>(); //FAKE IT EASY MOCK doesnt actually have access to that interface
+
 			//SUT - System Under Test
-			_pingService = new NetworkService();
+			_pingService = new NetworkService(_dNS);
 		}
 		[Fact]
 		public void NetworkService_SendPing_ReturnString()
 		{
 			//Arrange - variables, classes, mocks
 			//var pingService = new NetworkService(); Switched with SUT
-
+			A.CallTo(()=> _dNS.SendDNS()).Returns(true); //because we dont have access to that interface we mock it 
+			//and controll the return of that call. we set it true
 			//Act - actual execution
 			var result = _pingService.SendPing();
 
@@ -113,7 +121,6 @@ namespace MockNetworkUtility.Test.PingTests
 			//comparing value of an object member
 			result.Should().Contain(x => x.DontFragment == true);
 			result.Should().Contain(i => i.Ttl == 1);
-
 		}
 
 	}

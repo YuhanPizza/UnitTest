@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "wK91To/qXgVQng3B9viSZdWUlyD12IPkYcQiW++LmJQE4FX5URIw05jeizPnjBFD5C/JjqyActsAxgSScEBfJA==",
+  "dgSpecHash": "VahzrUYG3lxFoROm7A29sXzN8CeiCJfEFx2ATXvvTzMJ7xQMgFyjXIpG/jiSwQldXecSAkt8AwY7ZkKKqTIbcg==",
   "success": true,
   "projectFilePath": "C:\\Users\\loren\\OneDrive\\Desktop\\Unit Tests\\UnitTest\\MockNetworkUtility.Tests\\MockNetworkUtility.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\loren\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\loren\\.nuget\\packages\\fakeiteasy\\8.0.0\\fakeiteasy.8.0.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\fluentassertions\\6.12.0\\fluentassertions.6.12.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
@@ -40,6 +42,7 @@
     "C:\\Users\\loren\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.3.0\\system.diagnostics.diagnosticsource.4.3.0.nupkg.sha512",
+    "C:\\Users\\loren\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\system.diagnostics.tracing\\4.3.0\\system.diagnostics.tracing.4.3.0.nupkg.sha512",
     "C:\\Users\\loren\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
